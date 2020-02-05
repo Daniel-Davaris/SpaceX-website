@@ -5,13 +5,11 @@ $(document).ready(function() {
     });
     //  transition delay function for the top 'close' button
     $("#box").change( function(){
-        $('#cls').delay(1000).toggleClass('hide');
-        $('#cls').fadeToggle('slow');
+        $('#cls').delay(0).toggleClass('hide');
     });
     // logic + transition for the hamburger nav button 
     $('#cls').click(function() {
         $('#nav-btn > input').prop("checked", false);
-        $('#cls').delay(1000).toggleClass('hide');
-        $('#cls').fadeToggle('slow');
+        $('#cls').delay(0).toggleClass('hide');
     });
 });

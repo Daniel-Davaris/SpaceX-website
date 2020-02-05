@@ -52,8 +52,17 @@ function migration_scripts_styles() {
 	 * Loads our main stylesheet.
 	 */
 	wp_enqueue_style( 'migration-style', get_stylesheet_uri() );
+	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/src/main.js', array ( 'jquery' ), 1.1, true);
+	wp_enqueue_style( 'bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', array(), 20141119 );
+	wp_enqueue_style( 'theme-script', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', array(), 20141119 );
+	wp_enqueue_style( 'theme-script', 'https://code.jquery.com/jquery-3.3.1.slim.min.js', array(), 20141119 );
 
-	/*
+
+
+	// wp_enqueue_style( 'bs_css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+	wp_enqueue_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js');
+
+	/*wp_enqueue_script( $handle, $src, $deps, $ver, $in_footer);
 	 * Optional: Loads the Internet Explorer specific stylesheet.
 	 */
 	//wp_enqueue_style( 'migration-ie', get_template_directory_uri() . '/css/ie.css', array( 'migration-style' ), '20121010' );

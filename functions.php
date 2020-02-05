@@ -51,16 +51,15 @@ function migration_scripts_styles() {
 	/*
 	 * Loads our main stylesheet.
 	 */
+	wp_enqueue_style('bootstrap4', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css');
+
 	wp_enqueue_style( 'migration-style', get_stylesheet_uri() );
 	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/src/main.js', array ( 'jquery' ), 1.1, true);
-	wp_enqueue_style( 'bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', array(), 20141119 );
-	wp_enqueue_style( 'theme-script', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', array(), 20141119 );
-	wp_enqueue_style( 'theme-script', 'https://code.jquery.com/jquery-3.3.1.slim.min.js', array(), 20141119 );
+	
+
+	
 
 
-
-	// wp_enqueue_style( 'bs_css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
-	wp_enqueue_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js');
 
 	/*wp_enqueue_script( $handle, $src, $deps, $ver, $in_footer);
 	 * Optional: Loads the Internet Explorer specific stylesheet.
@@ -69,3 +68,12 @@ function migration_scripts_styles() {
 	//$wp_styles->add_data( 'migration-ie', 'conditional', 'lt IE 9' );
 }
 add_action( 'wp_enqueue_scripts', 'migration_scripts_styles' );
+
+// include custom jQuery
+function shapeSpace_include_custom_jquery() {
+
+	wp_deregister_script('jquery');
+	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
+
+}
+add_action('wp_enqueue_scripts', 'shapeSpace_include_custom_jquery');

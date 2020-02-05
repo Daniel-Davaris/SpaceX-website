@@ -1,0 +1,28 @@
+{
+  "name": "SpaceX",
+  "version": "1.0.0",
+  "description": "text build",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --watch --env.patch --env.dev",
+    "build-dev": "webpack --env.patch --env.dev",
+    "build-prod": "webpack --env.patch --env.production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-fix-style-only-entries": "^0.4.0"
+  },
+  "dependencies": {
+    "node": "^13.7.0",
+    "resolve-url-loader": "^3.1.0"
+  }
+}

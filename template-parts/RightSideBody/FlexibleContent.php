@@ -1,4 +1,3 @@
-
 <div class='page_section container-fluid'>
 <div class="p-0 parent container mx-auto ">
 
@@ -23,6 +22,5 @@
 <?php endif; ?>
 
 </div>
-
 </div>
 

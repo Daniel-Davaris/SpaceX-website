@@ -1,4 +1,7 @@
-
+.top{
+    bottom:unset !important;
+    padding-top:20px !important;
+}
 .outer_container > .col{
     height:100vh;
     padding:0px;
@@ -39,14 +42,16 @@
 .text_box{
     height:100%;
     z-index:2;
-
 }
+
 .left_sub-heading-row{
     padding-bottom:40px;
 }
+
 .left_sub-heading-col{
     max-width:400px;
 }
+
 .left_sub-heading{
     color:#AEAEAE;
     font-family:'Anton-Regular' ;
@@ -58,7 +63,6 @@
     min-width:400px !important;
     margin:0px;
     z-index:2;
-    
 }
 .circle{
     width: 200px;
@@ -85,7 +89,6 @@
     margin:0;
     z-index:99999999 !important;
     color:black;
-
 }
 
 .left_link:hover{
@@ -125,11 +128,6 @@
 }
 
 @media only screen and (max-width : 767px) {
-
-  
-    .left_heading{
-        
-    }
     
     .left_heading-row{
         max-width:200px;
@@ -144,20 +142,17 @@
         bottom:0px !important;
         max-width:200px;
     }
-    .left_sub-heading{
-        font-size:30px; 
-        line-height:35px;
-        max-width:200px !important;
-        min-width:0px !important;
-        
-   }
    .left_sub-heading-col{
        position: relative;
        padding-bottom:15px; 
        padding-left:15px !important;
    }
-
-  
+   .left_sub-heading{
+    font-size:30px; 
+    line-height:35px;
+    max-width:200px !important;
+    min-width:0px !important;
+    }   
    .left_content{
     left:0px !important;
     bottom:0px !important;
@@ -166,7 +161,10 @@
     height:100%;
     max-height:320px;
     padding-top:120px;
-    
+    }
+    .top{
+        bottom:unset !important;
+        padding-top:20px !important;
     }
 }
 

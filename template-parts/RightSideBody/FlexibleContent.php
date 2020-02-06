@@ -15,7 +15,7 @@
 					<?php elseif( get_row_layout() == '3_row' ): ?>
 						<?php get_template_part('Components/card','card') ?>
 					
-				<?php endif; ?>
+				<?php endif; ?>	
 				
 					
 	<?php endwhile; ?>	
@@ -23,4 +23,6 @@
 
 </div>
 </div>
+
+
 

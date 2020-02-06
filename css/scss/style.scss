@@ -17,11 +17,12 @@ Author URI: www.google.com
 @import "components/nav";
 @import "components/footer";
 @import "components/404";
+@import "components/left-side-content";
+@import "components/right-side-content";
 
 
 // FEATURES
-@import "features/left-side-content";
-@import "features/right-side-content";
+
 
 
 @import url('https://fonts.googleapis.com/css?family=Anton|Roboto&display=swap');

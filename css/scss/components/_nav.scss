@@ -54,10 +54,10 @@
  #sub-link{
     text-decoration: none;
     color: black;
-    // transition: color 0.3s ease;
-    
   }
-   
+  a:hover{
+    text-decoration:none !important;
+  }
   #sub-link:hover{
     color: rgb(182, 182, 182);
   }

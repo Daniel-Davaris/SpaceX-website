@@ -1,26 +1,19 @@
 <div class="m-0 img_container" style="background-image:url('<?php the_field('background-image_'); ?>'">
-				<div class="left_content">
-						<div class="ml-auto left_heading-row row">
-							<div class="left_heading-row col">
-								<h1 class="left_heading"><?php the_field('heading'); ?></h1>
-							</div>
-						</div>
-						<div class="ml-auto mb-auto left_sub-heading-row row">
-							<div class="left_sub-heading-col text_box col-12 col-sm-12 col-md-8 ">
-								
-								<h1 class="left_sub-heading"><?php the_field('sub-heading'); ?></h1>
-							</div>
-					
-							<div class="circle">
+		
+				<?php if( have_rows('display-box') ): ?>
+					<?php while( have_rows('display-box') ): the_row(); 
+						$pos = get_sub_field('display-box-vertical-position');
+						$Heading = get_sub_field('heading');
+						$SubHeading = get_sub_field('sub-heading');
+						$link = get_sub_field('learn-more-link');
+						?>
+		
+						<?php if( esc_html($pos['label']) == 't'): ?>
+							<?php get_template_part('Components/display-box-top','display-box-top') ?>
+						<?php elseif( esc_html($pos['label']) == 'b'): ?>
+							<?php get_template_part('Components/display-box-bottom','display-box-bottom') ?>
+						<?php endif; ?>
 
-								<?php 
-								$link = get_field('learn-more-link');
-								if( $link ): ?>
-									<a class="left_link" href="<?php echo esc_url( $link ); ?>">LEARN MORE</a>
-								<?php endif; ?>
-								
-							</div>  
-						
-						</div>
-				</div>
-</div>
+					<?php endwhile; ?>
+					<?php endif; ?>
+</div>	

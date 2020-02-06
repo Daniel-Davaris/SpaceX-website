@@ -6,10 +6,14 @@ $(document).ready(function() {
     //  transition delay function for the top 'close' button
     $("#box").change( function(){
         $('#cls').delay(0).toggleClass('hide');
+        $('.navigation-container').toggleClass('bg');
+        $('.menu').toggleClass('hide');
     });
     // logic + transition for the hamburger nav button 
     $('#cls').click(function() {
         $('#nav-btn > input').prop("checked", false);
         $('#cls').delay(0).toggleClass('hide');
+        $('.navigation-container').toggleClass('bg');
+        $('.menu').toggleClass('hide');
     });
 });

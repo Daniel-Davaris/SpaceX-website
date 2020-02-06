@@ -19,7 +19,7 @@
 		<span></span>
 		<span></span>
 		<span></span>
-		<div class="mx-auto navigation-container">
+		<div class="mx-auto bg navigation-container">
 		<?php wp_nav_menu( array( 
 				'theme_location' => 'secondary',
 				'container' => false,

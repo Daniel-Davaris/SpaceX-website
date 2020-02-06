@@ -1,6 +1,7 @@
 .burg{
     display:block;
     width:270px;
+    transition-timing-function: ease-in-out;
 }
 .burg > li > a{
     font-family:'Roboto-Thin';
@@ -137,9 +138,12 @@
     display:flex;
     align-items:center;
     justify-content:center;
-    // transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-    //              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-    //              opacity 0.55s ease;
+    transition: background-color 0.5s;
+    transition-timing-function: ease-in-out;
+   
+ }
+ .bg{
+    background-color:unset;
  }
   .nav-ul{
      list-style-type:none;

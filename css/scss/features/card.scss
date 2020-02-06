@@ -27,7 +27,7 @@
     margin:0px;
     max-width:180px;
     max-height:150px;
-    min-height:150px;
+    min-height:100px;
 }
 .c-title{
     font-family:'Roboto-Bold';
@@ -43,6 +43,7 @@
     font-size:14px;
     line-height:18px;
     max-width:180px;
+    margin-bottom:0px;
 }
 
 @media only screen and (max-width : 767px) {
@@ -64,7 +65,6 @@
     .small_img_container{
         max-width:250px !important;
         max-height:200px !important;
-        background-color:red !important;
     }
     .small_img_container > img{ 
          width:225px !important;

@@ -1,13 +1,13 @@
 .burg{
     display:block;
-    width:200px;
+    width:270px;
 }
 .burg > li > a{
-    font-family:'Roboto-Light';
-    font-size:50px;
+    font-family:'Roboto-Thin';
+    font-size:60px;
     color:black;
     line-height:60px;
-    font-weight:100;
+    text-transform: uppercase;
 }
 .burg > li > a:hover{
     color:rgb(179, 179, 179);
@@ -248,5 +248,17 @@
      
     .nav-ul li{
         padding-right:20px;
+    }
+ }
+ @media only screen and (max-width : 575px) {
+    .navigation-container{
+        padding-right:55vw !important;
+    }
+    .burg{
+        width:200px;
+    }
+    .burg > li > a{
+        font-size:40px;
+        line-height:40px;
     }
  }

@@ -1,0 +1,37 @@
+.right_heading{
+    font-family:'Roboto-Bold';
+    font-size:20px;
+    line-height:16px;
+    margin-bottom:0;
+    margin-bottom:20px;
+    max-width:580px;
+    padding-right:185px
+}
+.right_paras-top{
+    max-width:610px;
+}
+.right_para{
+    font-family:'Roboto-Light';
+    font-size:14px;
+    line-height:18px;
+    color:#494949;
+    max-width:260px;
+}
+@media only screen and (max-width : 767px) {
+
+    .right_paras-top :nth-child(2){
+        padding:0px !important;
+    }
+    .right_paras-top > .col-12{
+        display:flex;
+        flex-direction: column;
+        align-items:flex-start;
+        text-align:left;
+        padding:0px !important;
+    }
+    .right_para{
+        margin-left:auto !important;
+        margin-right:auto !important;
+       
+    }
+}

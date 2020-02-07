@@ -7,6 +7,7 @@
 		
 
 				<?php if( get_row_layout() == '1_row' ): ?>
+					
 					<?php get_template_part('Components/2-col-text','2-col-text') ?>
 			
 					<?php elseif( get_row_layout() == '2_row' ): ?>

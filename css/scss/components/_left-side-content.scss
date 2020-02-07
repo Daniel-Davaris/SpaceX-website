@@ -9,7 +9,7 @@
     scroll-behavior: smooth;
 }
 .outer_container > .first{
-    position:fixed;
+    position:fixed; 
 }
 .img_container{
     padding:0px;
@@ -20,7 +20,12 @@
     position:relative;
     background-position:bottom;
 }
-
+.second-circle{
+    max-width:615px !important;
+}
+.second-circle > .text_box{
+    padding-left:0px !important;
+}
 .left_content{
     position:absolute;
     bottom:64px;
@@ -46,6 +51,15 @@
 
 .left_sub-heading-col{
     max-width:400px;
+
+}
+.left_sub-heading-col-2{
+    max-width:200px !important;
+    z-index:0 !important;
+}
+.left_sub-heading-col-2 > .left_sub-heading{
+    max-width:200px !important;
+    z-index:0 !important;
 }
 
 .left_sub-heading{
@@ -59,6 +73,10 @@
     min-width:400px !important;
     margin:0px;
     z-index:2;
+}
+.left_sub-heading-2{
+    
+    z-index:0 !important;
 }
 .circle{
     width: 200px;
@@ -75,6 +93,14 @@
     align-items:center;
     justify-content:center;
     
+}
+.circle2{
+    background-color:unset !important;
+    background-size: cover;
+    z-index:0 !important;
+}
+.circle2 > a{
+    color:white !important;
 }
 .left_link{
     font-family: 'Anton-Regular';
@@ -95,6 +121,9 @@
 
    .circle{
         visibility: hidden;
+    }
+    .circle2{
+        visibility: visible !important;
     }
     .left_sub-heading{
         font-size:50px;
@@ -121,6 +150,9 @@
     .left_heading-row{
         padding-left:0px !important;
     }
+    .circle2{
+        margin-left: 360px !important;
+    }
 }
 
 @media only screen and (max-width : 767px) {
@@ -146,7 +178,7 @@
    .left_sub-heading{
     font-size:30px; 
     line-height:35px;
-    max-width:200px !important;
+    max-width:200px;
     min-width:0px !important;
     }   
    .left_content{
@@ -162,10 +194,27 @@
         bottom:unset !important;
         padding-top:20px !important;
     }
+    .left_sub-heading-col-2{
+        max-width:200px !important;
+    }
+    .left_sub-heading-col-2 > .left_sub-heading{
+        max-width:200px !important;
+    }
+    .circle2{
+        margin-left: 200px !important;
+        width:130px !important;
+        height:130px !important;
+    }
+    .second-circle{
+        max-width:300px !important;
+    }
 }
 
 @media only screen and (max-width : 575px) {
     .left_content{
         max-height:290px;
+    }
+    .circle2{
+        margin-left: 170px !important;
     }
 }

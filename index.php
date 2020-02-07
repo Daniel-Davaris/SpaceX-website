@@ -18,16 +18,27 @@ get_header(); ?>
  * The default template for displaying content.
  */
 ?>
-
-<div class="m-0 outer_container row">
+<?php if ( is_home() ) { ?>
+	<div class="m-0 outer_container row">
 	<div class=" first p-0 col-sm-12 col-md-12 col-lg-12 col-xl-6">
 		<?php get_template_part('template-parts/LeftSideBody/StaticContent','StaticContent') ?>
 	</div>
 
 	<div id="right_side" class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
 		<?php get_template_part('template-parts/navbar','navbar') ?>
-		<?php get_template_part('template-parts/RightSideBody/FlexibleContent','navbar') ?>
+		<?php get_template_part('template-parts/RightSideBody/FlexibleContent','FlexibleContent') ?>
 	</div>
-</div>
+<?php } else { ?>
+	<div class="m-0 outer_container row">
+	<div class=" first p-0 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+		<?php get_template_part('template-parts/LeftSideBody/StaticContent','StaticContent') ?>
+	</div>
+	<div id="right_side" class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+		<?php get_template_part('template-parts/navbar','navbar') ?>
+		<?php get_template_part('template-parts/generic-page','generic-page') ?>
+	</div>
+<?php } ?>
+
+
 
 <?php get_footer(); ?>
